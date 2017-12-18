@@ -7,7 +7,7 @@
 @section('content')
     <h1>Renginiai</h1>
     @foreach($events->chunk(3) as $eventsChunk)
-        <div class="row">
+        <div class="row" style="margin-bottom:320px">
             @foreach($eventsChunk as $event)
                 <div class="col-sm-2 col-md-4">
                     <div class="thumbnail">

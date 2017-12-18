@@ -27,18 +27,18 @@
 
             <!-- Text input-->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="price">Kaina (valandinis tarifas)</label>
+                <label class="col-md-4 control-label" for="price">Kaina</label>
                 <div class="col-md-4">
-                    <input id="price" name="price" value="{{old('price')}}" placeholder="€/h" type="number" step="0.01" class="form-control input-md" required="">
+                    <input id="price" name="price" value="{{old('price')}}" placeholder="€" type="number" step="0.01" class="form-control input-md" required="">
                 </div>
             </div>
 
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="date_available">Galimas nuomos laikotarpis (iki pasirinktos dienos)</label>
-                <div class="col-md-4">
-                    <input id="date_available" name="date_available" value="{{old('date_available')}}" type="date" class="form-control input-md" required="">
-                </div>
-            </div>
+            {{--<div class="form-group">--}}
+                {{--<label class="col-md-4 control-label" for="date_available">Galimas nuomos laikotarpis (iki pasirinktos dienos)</label>--}}
+                {{--<div class="col-md-4">--}}
+                    {{--<input id="date_available" name="date_available" value="{{old('date_available')}}" type="date" class="form-control input-md" required="">--}}
+                {{--</div>--}}
+            {{--</div>--}}
 
             <!-- Text input-->
             <div class="form-group">
@@ -68,7 +68,7 @@
             </div>
 
             <!-- Select Basic -->
-            <div class="form-group">
+            <div class="form-group" >
                 <label class="col-md-4 control-label" for="product_type">Produkto tipas</label>
                 <div class="col-md-4">
                     <select id="product_type" name="product_type" class="form-control">
@@ -81,7 +81,7 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label" for="file">Produkto nuotrauka (.png ne didesnė nei 10mb)</label>
+                <label class="col-md-4 control-label" for="file">Produkto nuotrauka (.png max 10MB)</label>
                 <div class="col-md-4">
                     <input type="file" name="file" id="file">
                     <input type="hidden" value="{{csrf_token()}}" name="_token">

@@ -32,6 +32,10 @@
                     <li><a href="{{route('admin.createEvent')}}">Kurti renginį</a></li>
                     <li><a href="{{route('admin.getRentSummary')}}">Nuomos ataskaita</a></li>
                     <li><a href="{{route('admin.getUserSummary')}}">Vartotojų ataskaita</a></li>
+                    <li><a href="{{route('order')}}">Užsakymų peržiūra ir atšaukimas</a></li>
+
+                    <li><a href="{{route('order-make-reports')}}">Pardavimų ataskaita</a></li>
+
                 </ul>
 
             </ul>
@@ -57,9 +61,19 @@
             <a href="{{route('admin.getRentSummary')}}" class="buttonAdm">Nuomos ataskaita</a>
             <a href="{{route('admin.getUserSummary')}}" class="buttonAdm">Vartotojų ataskaita</a>
         </div>
+
     </div>
+    <div class="row">
+    <div  style="padding-top: 20px;">
 
-
+    </div>
+    <div class="col-md-8" style="padding-top: 20px;">
+        <a href="{{route('order')}}" class="buttonAdm">Užsakymų peržiūra ir atšaukimas</a>
+    </div>
+        <div class="col-md-8" style="padding-top: 20px;">
+            <a href="{{route('order-make-reports')}}" class="buttonAdm">Pardavimų ataskaita</a>
+        </div>
+    </div>
 
 
 @endsection

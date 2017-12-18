@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="{{URL::to('css/side-menu.css')}}">
 
 
-    <div class="container">
+    <div class="container" style="margin-top: 250px">
     <h1>Mano profilis</h1>
     @if(session('success'))
         <p class="alert alert-success">{{session('success')}}</p>

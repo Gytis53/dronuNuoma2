@@ -5,145 +5,168 @@
 @endsection
 
 @section('content')
-    <html lang="en">
+    <shadow></shadow><style></style>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <title>    Home Page
+        </title>
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://localhost/dronuNuoma/public/css/main.css">
+
+    </head>
+    <html lang="en" class=" js no-touch csstransforms3d csstransitions"><head>
+        <meta charset="UTF-8">
+        <title>    Home Page
+        </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://localhost/dronuNuoma/public/css/main.css">
 
     </head>
     <body>
+        <section style="background: url(http://www.pembrokeshirecoastalforum.org.uk/wp-content/uploads/2017/03/8a5149_75dd2d1db1a140559da4b84658b81343-mv2.jpg);" class="divider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
 
-    <main role="main">
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1>One more for good measure.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                        </div>
+                        <h2 class="h1 text-uppercase no-margin">Nuomos punktai</h2>
+                        <p>Raskite žemėlapyje</p><a href="http://localhost/dronuNuoma/public/map" class="btn btn-template wide shop-now" style="background: #111111">Peržiūrėti</a>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <a href="#" class="navbar-left"><img src="/DNCORNER.png"></a>
+        </section>
+        <!-- Categories Section-->
+        <section class="categories">
+            <div class="container">
+                <header class="text-center">
+                    <h2 class="text-uppercase"><small>Didžiausias dronų pasirinkimas</small>Kategorijos:</h2>
+                </header>
+                <div class="row text-left">
+                    <div class="col-lg-6"><a href="http://localhost/dronuNuoma/public/shop/index">
+                            <div style="background-image: url(http://theflycompany.co.uk/wp-content/uploads/2015/03/UAV_Blog_header.jpg);" class="item d-flex align-items-end">
+                                <div class="content">
+                                    <h3 class="h5">Nuoma</h3>
+                                </div>
+                            </div></a></div>
+                    <div class="col-lg-6"><a href="http://localhost/dronuNuoma/public/shop/index">
+                            <div style="background-image: url(https://images.monoprice.com/mp/category/gadgets/drones/drones_header_1600x500.jpg);" class="item d-flex align-items-end">
+                                <div class="content">
+                                    <h3 class="h5">Parduotuvė</h3>
+                                </div>
+                            </div></a></div>
+
+                </div>
+            </div>
+        </section>
+        {{--<!-- Men's Collection -->--}}
+        {{--<section class="men-collection gray-bg">--}}
+            {{--<div class="container">--}}
+                {{--<header class="text-center">--}}
+                    {{--<h2 class="text-uppercase"><small>Dronų nuoma</small>Dronų nuoma</h2>--}}
+                {{--</header>--}}
+                {{--<!-- Products Slider-->--}}
+
+            {{--</div>--}}
+        {{--</section>--}}
+
+
+
+
+
+
+
+        <!-- Overview Popup    -->
+
+        <div id="scrollTop"><i class="fa fa-long-arrow-up"></i></div>
+        {{--<!-- Footer-->--}}
+        {{--<footer class="main-footer">--}}
+            {{--<!-- Service Block-->--}}
+            {{--<div class="services-block">--}}
+                {{--<div class="container">--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-lg-6 d-flex justify-content-center justify-content-lg-start">--}}
+                            {{--<div class="item d-flex align-items-center">--}}
+                                {{--<div class="icon"><i class="icon-truck"></i></div>--}}
+                                {{--<div class="text">--}}
+                                    {{--<h6 class="no-margin text-uppercase">Nemokamas atsiėmimas ir pristatymas</h6>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-lg-6 d-flex justify-content-center">--}}
+                            {{--<div class="item d-flex align-items-center">--}}
+                                {{--<div class="icon"><i class="icon-coin"></i></div>--}}
+                                {{--<div class="text">--}}
+                                    {{--<h6 class="no-margin text-uppercase">Pinigų grąžinimo garantija</h6>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+
+
+            {{--<div class="copyrights">--}}
+                {{--<div class="container">--}}
+                    {{--<div class="row d-flex align-items-center">--}}
+                        {{--<div class="text col-md-6">--}}
+                            {{--<p>© 2017 <a href="http://dronunuoma.tk" target="_blank">Alaus Baronai</a></p>--}}
+                        {{--</div>--}}
+                        {{--<div class="payment col-md-6 clearfix">--}}
+                            {{--<ul class="payment-list list-inline-item pull-right">--}}
+                                {{--<li class="list-inline-item"><img src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/img/visa.svg" alt="..."></li>--}}
+                                {{--<li class="list-inline-item"><img src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/img/mastercard.svg" alt="..."></li>--}}
+                                {{--<li class="list-inline-item"><img src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/img/paypal.svg" alt="..."></li>--}}
+                                {{--<li class="list-inline-item"><img src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/img/western-union.svg" alt="..."></li>--}}
+                            {{--</ul>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</footer>--}}
+
+        <div id="style-switch" class="collapse">
+            <h4 class="text-uppercase">Select theme colour</h4>
+            <form class="mb-3">
+                <select name="colour" id="colour" class="form-control style-switch-select">
+                    <option value="">select colour variant</option>
+                    <option value="default">violet</option>
+                    <option value="pink">pink</option>
+                    <option value="green">green</option>
+                    <option value="red">red</option>
+                    <option value="sea">sea</option>
+                    <option value="blue">blue</option>
+                </select>
+            </form>
+            <p><img src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/img/template-mac.png" alt="" class="img-fluid"></p>
+            <p class="text-muted text-small">Stylesheet switching is done via JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
         </div>
+        <!-- Javascript files-->
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/jquery/jquery.min.js"></script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/popper.js/umd/popper.min.js"> </script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/jquery.cookie/jquery.cookie.js"> </script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js"></script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/vendor/nouislider/nouislider.min.js"></script>
+        <script src="https://d32d8xzgnjxuvk.cloudfront.net/hub/1-2/js/front.js"></script>
 
 
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+    </div>
 
-        <div class="container marketing">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
-
-        </div><!-- /.container -->
-    </main>
-    </body>
-    </html>
-
+    </body></html>
 @endsection
-
-@section('styles')
-    <link href="{{URL::to('css/carousel.css')}}" rel="stylesheet">
-@endsection
+{{--@section('styles')--}}
+    {{--<link href="{{URL::to('css/carousel.css')}}" rel="stylesheet">--}}
+{{--@endsection--}}

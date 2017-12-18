@@ -7,49 +7,51 @@
 @section('content')
 
 
-        <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://js.stripe.com/v3/"></script>
 
-        <style>
-            .spacer {
-                margin-bottom: 24px;
-            }
+    <style>
+        .spacer {
+            margin-bottom: 24px;
+        }
 
-            /**
-             * The CSS shown here will not be introduced in the Quickstart guide, but shows
-             * how you can use CSS to style your Element's container.
-             */
-            .StripeElement {
-                background-color: white;
-                padding: 10px 12px;
-                border-radius: 4px;
-                border: 1px solid #ccd0d2;
-                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                -webkit-transition: box-shadow 150ms ease;
-                transition: box-shadow 150ms ease;
-            }
+        /**
+         * The CSS shown here will not be introduced in the Quickstart guide, but shows
+         * how you can use CSS to style your Element's container.
+         */
+        .StripeElement {
+            background-color: white;
+            padding: 10px 12px;
+            border-radius: 4px;
+            border: 1px solid #ccd0d2;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: box-shadow 150ms ease;
+            transition: box-shadow 150ms ease;
+        }
 
-            .StripeElement--focus {
-                box-shadow: 0 1px 3px 0 #cfd7df;
-            }
+        .StripeElement--focus {
+            box-shadow: 0 1px 3px 0 #cfd7df;
+        }
 
-            .StripeElement--invalid {
-                border-color: #fa755a;
-            }
+        .StripeElement--invalid {
+            border-color: #fa755a;
+        }
 
-            .StripeElement--webkit-autofill {
-                background-color: #fefde5 !important;
-            }
+        .StripeElement--webkit-autofill {
+            background-color: #fefde5 !important;
+        }
 
-            #card-errors {
-                color: #fa755a;
-            }
-        </style>
+        #card-errors {
+            color: #fa755a;
+        }
+    </style>
 
     <div class="container">
-        <div class="col-md-6 col-md-offset-3">
-            <h1>Mokėjimo duomenys</h1>
-            <div class="spacer"></div>
 
+            <h1>Mokėjimo duomenys</h1>
+
+
+        <div class="col-lg-6 col-md-offset-6 col-centered">
+            <div class="spacer"></div>
             @if (session()->has('success_message'))
                 <div class="alert alert-success">
                     {{ session()->get('success_message') }}
@@ -65,60 +67,16 @@
                     </ul>
                 </div>
             @endif
-            <form action="{{ url('/checkout') }}" method="POST" id="payment-form">
+            <form action="{{ url('/checkout2') }}" method="POST" id="payment-form">
                 {{ csrf_field() }}
+                {{--<div class="form-group">--}}
+                    {{--<label for="email">El. paštas</label>--}}
+                    {{--<input type="email" class="form-control" id="email">--}}
+                {{--</div>--}}
                 <div class="form-group">
-                    <label for="email">El. paštas</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-
-                <div class="form-group">
-                    <label for="name_on_card">Vardas</label>
+                    <label for="name_on_card">Vardas ant kortelės</label>
                     <input type="text" class="form-control" id="name_on_card" name="name_on_card">
                 </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="address">Adresas</label>
-                            <input type="text" class="form-control" id="address" name="address">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="city">Miestas</label>
-                            <input type="text" class="form-control" id="city" name="city">
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="postalcode">Pašto Kodas</label>
-                            <input type="text" class="form-control" id="postalcode" name="postalcode">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="country">Valstybė</label>
-                            <input type="text" class="form-control" id="country" name="country">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="phone">Telefono Nr.</label>
-                            <input type="text" class="form-control" id="phone" name="phone">
-                        </div>
-                    </div>
-
-                </div>
-
                 <div class="form-group">
                     <label for="card-element">Kreditinės kortelės duomenys</label>
                     <div id="card-element">

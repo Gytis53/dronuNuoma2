@@ -90,6 +90,8 @@ Route::group(['prefix' => 'customer'],function () {
 
 });
 
+
+
 Route::get('/logout', [
     'uses' => 'UserController@logout',
     'as' => 'customer.logout'
@@ -171,3 +173,78 @@ Route::get('/events',[
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//STRIPE CHECKOUTAS
+
+Route::view('/checkout', 'shop/checkout');
+
+Route::post('/checkout', function(Request $request) {
+
+        return back()->with('success_message', 'Jūsų mokėjimas priimtas!');
+});
+Route::view('/checkout2', 'shop/checkout2');
+
+Route::post('/checkout2', function(Request $request) {
+
+    return back()->with('success_message', 'Jūsų mokėjimas priimtas!');
+});
+Route::view('/order-page', '/order-page');
+
+
+Route::get('/order-summary',[
+    'uses' => 'OrderContoller@getOrder',
+    'as' => 'order-summary'
+]);
+//Route::post('/order-page', function(Request $request) {
+//
+//    return back()->with('success_message', 'Jūsų mokėjimas priimtas!');
+//});
+
+Route::post('/order-page', [
+    'uses' => 'OrderContoller@saveOrder',
+    'as' => 'showOrderSummary'
+]);
+Route::get('/orders-view', [
+    'uses' => 'OrderContoller@getOrders',
+    'as' => 'order'
+]);
+Route::get('/cancelOrder/{id}', [
+    'uses' => 'OrderContoller@cancelOrder',
+    'as' => 'cancelOrder'
+]);
+Route::get('/cancelOrder/{id}', [
+    'uses' => 'OrderContoller@cancelUserOrder',
+    'as' => 'cancelUserOrder'
+]);
+
+
+// Produkto puslapis
+
+//Route::get('/store','ProductController', ['only' => ['index', 'show']]);
+
+//Route::get('/store',['uses' => 'ProductController@show', 'as' => 'store'
+//]);
+//
+//
+Route::get('/store', function () {
+    return redirect('store');
+});
+Route::resource('store', 'ProductController', ['only' => ['index', 'show']]);
+
+Route::post('/order-report', [
+    'uses' => 'OrderContoller@getOrdersReport',
+    'as' => 'order-report'
+]);
+Route::get('/order-make-reports', [
+    'uses' => 'OrderContoller@makeOrderReports',
+    'as' => 'order-make-reports'
+]);
+
+
+//cart
+Route::resource('cart', 'CartController');
+Route::delete('emptyCart', 'CartController@emptyCart');
+
+Route::post('/leaveReview', [
+    'uses' => 'PrekybaController@leaveReview',
+    'as' => 'prekyba.leaveReview'
+]);

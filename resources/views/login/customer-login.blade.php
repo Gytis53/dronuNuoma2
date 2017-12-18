@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Prisijungimas</div>
+                    <div class="panel-heading"><h1>Prisijungimas</h1></div>
 
                     <div class="panel-body">
                         <form class="form-horizontal" method="POST" action="{{ route('customer.login.submit') }}">
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" style="padding-bottom: 70px">
                                 <div class="col-md-8 col-md-offset-4">
                                     <a type="btn" class="btn btn-primary" href="{{route('customer.register')}}">
                                         Sukurti paskyrą

@@ -6,7 +6,7 @@
 
 @section('content')
     <h1>Nuomos forma</h1>
-    <form class="form-horizontal" action="#" method="get"> <!-- Apmokėjimai nulems routą ir parametrus kuriuos perduosiu -->
+    <form class="form-horizontal" action="http://localhost/dronuNuoma/public/checkout" method="get"> <!-- Apmokėjimai nulems routą ir parametrus kuriuos perduosiu -->
         <fieldset>
             {{ csrf_field() }}
             <div class="form-group">
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" >
                 <label class="col-md-4 control-label" for="product_type">Nuomos punktas</label>
                 <div class="col-md-4">
                     <select id="product_type" name="product_type" class="form-control">
